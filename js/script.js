@@ -20,4 +20,13 @@ const bikes = [
         nome: "Specialized",
         peso: 7.2,
     }
-]
+];
+
+// TROVO LA BICI CON IL PESO MINORE
+let biciLeggera = bikes[0];
+
+for (let i=1; i<bikes.length; i++) {
+    if (bikes[i].peso < biciLeggera.peso) {
+        biciLeggera = bikes[i];
+    }
+}
