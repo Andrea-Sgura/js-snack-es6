@@ -65,3 +65,11 @@ const teams = [
         falliSubiti: 0,
     },
 ]
+
+// GENERO NUMERI CASUALI PER I PUNTI FATTI E I FALLI SUBITI
+for(let team of teams) {
+    team.puntiFatti = Math.floor(Math.random() *100);
+    team.falliSubiti = Math.floor(Math.random() * 50);
+}
+
+console.log(teams);
