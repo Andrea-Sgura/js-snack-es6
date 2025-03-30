@@ -72,4 +72,8 @@ for(let team of teams) {
     team.falliSubiti = Math.floor(Math.random() * 50);
 }
 
-console.log(teams);
+// CREO UN NUOVO ARRAY SOLO CON NOME E FALLI SUBITI
+const teamsFouls = team.map(team => ({
+    nome: team.nome,
+    falliSubiti: team.falliSubiti,
+}))
