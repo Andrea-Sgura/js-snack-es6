@@ -73,7 +73,10 @@ for(let team of teams) {
 }
 
 // CREO UN NUOVO ARRAY SOLO CON NOME E FALLI SUBITI
-const teamsFouls = team.map(team => ({
+const teamsFouls = teams.map(team => ({
     nome: team.nome,
     falliSubiti: team.falliSubiti,
 }))
+
+// STAMPO IN CONSOLE IL RISULTATO
+console.log("Nuovo array con nome e falli subiti:", teamsFouls);
